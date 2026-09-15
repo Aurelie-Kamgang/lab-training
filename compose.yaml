@@ -1,0 +1,18 @@
+services:
+  web:
+    # TODO : build: ./web
+    # TODO : container_name: mission-web
+    # TODO : ports
+    # TODO : bind mount de index.html
+    # TODO : volume web_logs
+    # TODO : réseau app_network
+
+  tools:
+    image: alpine
+    command: ["sh", "-c", "while true; do sleep 3600; done"]
+    # TODO : container_name: tools
+    # TODO : réseau app_network
+
+# TODO : déclarer app_network en bridge
+
+# TODO : déclarer web_logs
